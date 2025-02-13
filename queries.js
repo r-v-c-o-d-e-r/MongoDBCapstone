@@ -233,7 +233,13 @@ db.Flights.find({
 }).pretty()
 
 //Display the flightId of all those flights in which no booking is done
-
+db.Flights.find({
+    "flights.bookings": {
+        $size: 0
+    }
+}, {
+    "flights.flightId": 1
+}).pretty()
 //Display the flights from Chennai to Kolkata having more than 10 seats available
 
 //Display the baseFare for each class of flight E6-2145
