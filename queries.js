@@ -224,6 +224,13 @@ db.Flights.insertMany([
 ])
 
 //Display all the NON STOP filgts from Bengaluru to Delhi.
+db.Flights.find({
+    source: "Bengaluru",
+    destination: "Delhi",
+    "flights.stops": 0
+}, {
+    "flights": 1
+}).pretty()
 
 //Display the flightId of all those flights in which no booking is done
 
