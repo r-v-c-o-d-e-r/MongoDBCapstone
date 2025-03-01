@@ -144,6 +144,14 @@
                         "baseFare": 3587
                     },
                     {
+                        "travelClass": "Economy",
+                        "baseFare": 3600
+                    },
+                    {
+                        "travelClass": "Economy",
+                        "baseFare": 3988
+                    },
+                    {
                         "travelClass": 'Business',
                         "baseFare": 9649
                     }
